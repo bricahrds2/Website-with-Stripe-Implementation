@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Denzel Curry - Melt My Eyez - Merch Collection</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="Mycode.css"/>
+        <script src="store.js" async></script>
+        <script src="https://checkout.stripe.com/checkout.js" defer></script>
+        <script>
+            var stripePublicKey = '<%= stripePublicKey %>'
+        </script>
+    </head>
+    <body>
+        <header class="main-header">
+            <h1 class="top-h1 art-name"> Denzel Curry </h1>
+            <hr>
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="my first page.html">Home</a></li>
+                    <li><a href="shopping.html">Store</a></li>
+                    <li><a href="index.html">Shows</a></li>
+                    <li><a href="https://laylo.com/denzelcurry">GET UPDATES</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <h1 class="section-header">Store</h1>
+        <section class="container content-section">
+            <button class="btn btn-primary btn-dropdown"  type="menu">Featured </button>
+                <h2 class="section-header">Music</h2>
+                <div class="shop-items">
+                    <% items.music.forEach(function(item){ %>
+                        <div class="shop-item" data-item-id="<%= item.id %>">
+                            <img class="shop-item-image" src ="images/<%=item.imgName %>">
+                            
+                            <span class="shop-item-title"><%= item.name %></span>
+                        
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$<%= item.price / 100 %></span>
+                                <button class="btn btn-primary shop-item-button"  role="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+                <h2 class="section-header">Merch</h2>
+                <div class="shop-items">
+                    <% items.merch.forEach(function(item){ %>
+                        <div class="shop-item" data-item-id="<%= item.id %>">
+                            <img class="shop-item-image" src ="images/<%=item.imgName %>">
+                            
+                            <span class="shop-item-title"><%= item.name %></span>
+                        
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$<%= item.price / 100 %></span>
+                                <button class="btn btn-primary shop-item-button"  role="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+                <h2 class="section-header">Miscellaneous</h2>
+                <div class="shop-items">
+                    <% items.miscellaneous.forEach(function(item){ %>
+                        <div class="shop-item" data-item-id="<%= item.id %>">
+                            <img class="shop-item-image" src ="images/<%=item.imgName %>">
+                            
+                            <span class="shop-item-title"><%= item.name %></span>
+                        
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$<%= item.price / 100 %></span>
+                                <button class="btn btn-primary shop-item-button"  role="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+        </section>
+        <br>
+        <div>
+        <section class="shop-page-selector">
+            <button class="btn btn-primary" type="button">1</button>
+            <button class="btn btn-primary" type="button">2</button>
+            <button class="btn btn-primary" type="button">&gt;</button>
+        </section>
+        </div>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row ">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                
+                <span class="cart-size cart-header cart-column">SIZE</span>
+                
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+                
+            </div>
+            <div class="cart-total">
+                <span class="cart-total-title">TOTAL:</span>
+                <span class="cart-total-price">$0</span>
+                <button class="btn  btn-primary btn-total" role="button">CHECK OUT</button>
+            </div>
+        </section>
+        <footer class="main-footer">
+            <h2 class="art-name">Melt My Eyez See Your Future</h2>
+            <div class="container main-footer-container">
+                <div class="block-container">
+                    <h8>GET UPDATES</h8>
+                    <a href="www.laylo/denzelcurry">SIGN UP</a>
+                </div>
+                <div class="block-container">
+                    <h8>FOLLOW</h8>
+                    <ul class="nav">
+                    <a href="https://www.instagram.com/denzelcurryph/" target="blank">
+                        <img src="images/Instagram Logo.png" width="30" height="30"></a>
+                    <a href="https://www.facebook.com/ultimatedenzelcurry/" target="blank">
+                        <img src ="images/Facebook_logo.png" width="30" height="30"></a>
+                    <a href="https://twitter.com/denzelcurry" target="blank">
+                        <img src="images/New Twitter Logo.png" width="30" height="30"></a>
+                    <a href="https://www.youtube.com/user/DENZELCURRYPH" target="blank">
+                        <img src="images/YOutube Logo.png" width="30" height="30"></a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+

@@ -1,0 +1,68 @@
+{
+    "music": [
+        {
+            "id": 10,
+            "name": "Melt My Eyes See Your Future Vinyl",
+            "price": 2500,
+            "imgName": "Vinyl Merch.jpg"
+        },
+        {
+            "id":20,
+            "name": "Melt My Eyez See Your Future Limited Edition Vinyl",
+            "price": "2800",
+            "imgName": "Limited Edition Vinyl Merch.webp"
+        },
+        {
+            "id":30,
+            "name": "Melt My Eyes See Your Future Cassette",
+            "price": "1000",
+            "imgName": "DenzelCurry_CassPackshot.webp"
+        },
+        {
+            "id":40,
+            "name": "Melt My Eyes See Your Future Digital Edition",
+            "price": "999",
+            "imgName": "Denzel Curry Digital Album.webp"
+        }
+    ],
+    "merch": [
+        {
+            "id": "11",
+            "name": "Melt My Eyez Cap",
+            "price": "2200",
+            "imgName": "Cap Merch.jpg"
+        },
+        {
+            "id":12,
+            "name": "Melt My Eyez Liner Jacket",
+            "price": "12000",
+            "imgName": "Denzel Curry Liner Jacket Melt My Eyez.webp"
+        },
+        {
+            "id":13,
+            "name": "Melt My Eyez Long Sleeve",
+            "price": "4500",
+            "imgName": "Long Sleeve Merch.png"
+        },
+        {
+            "id":14,
+            "name": "Melt My Eyez Red Album Shirt",
+            "price": "3500",
+            "imgName": "Shirt_Merch.jpg"
+        }
+    ],
+    "miscellaneous": [
+        {
+            "id": 0,
+            "name": "Melt My Eyez Tote Bag",
+            "price": "3500",
+            "imgName": "Denzel Curry Kenny Beats Tote Bag.jpg"
+        },
+        {
+            "id": 1,
+            "name": "Denzel Curry X Kenny Beats Unlocked Bottle",
+            "price": "2500",
+            "imgName": "Denzel Curry X Kenny Beats Unlocked Bottle.png"
+        }
+    ]
+}

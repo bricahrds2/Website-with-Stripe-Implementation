@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vesper+Libre&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: BioRhyme, serif;
+    color: #777;
+}
+.blue {
+    /* Hexadecimal #FFFFFF First two is red value, next two are green 
+    last two blue 
+    Can use rgb(Red value, Green value, blue value)
+    rbga has a transparancy between 0 and 1 at the end
+    hsl hue, sat, lightness
+    */
+    color: #f4f800;
+}
+
+.box{
+    height: 100px;
+    width: 100px; /*rem doesnt change when font size changes, em does*/
+    padding: 20px; /*content space to border*/
+    margin: 50px; /*outside the border*/
+    border: 10px solid yellow;
+    background-color: darkviolet;
+}
+
+html , body{
+    margin: 0;
+    padding: 0;
+}
+
+.top-h1{
+    color: #f4f800;
+}
+
+.art-name{
+    text-align: center;
+    margin: 0;
+    font-size: 6em;
+    font-weight: normal;
+    font-family: 'Black Ops One', cursive;
+}
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+.nav ul{
+    margin: 0;
+}
+
+.nav a:hover{
+    background-color: rgba(255,255,255, .3);
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.main-nav li{
+    padding: 0 5%;
+}
+
+.main-header{
+    background-image: url(images/banner-background-5.jpg);
+    background-size: cover;
+    background-color: rbga(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    padding-bottom: 20px;
+}
+.content-section {
+    margin: 2em;
+}
+
+.container {
+    max-width: 976px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header{
+    font-family: Vesper Libre, serif;
+    font-weight: normal;
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+}
+
+.about-band-image{
+    float: left;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 30%;
+}
+
+.main-footer{
+    background-color: #0a0401fc;
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container{
+    display: flex;
+}
+
+.block-container{
+    padding: .25em 1em;
+    display:grid;
+    margin: 0.8em auto;
+    align-items: center;
+    border-style: solid;
+    border-color: white;
+    border-width: .1rem;
+}
+.block-container h8{
+    text-align: center;
+    vertical-align: middle;
+    color:white;
+    font-weight: bold;
+}
+.block-container a{
+    text-align: center;
+    vertical-align: middle;
+    color:white;
+}
+
+.btn{
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+
+.btn-header{
+    margin: 2em 10% 1.2em 10%;
+    color: white;
+    border: 2px solid wheat;
+    background-color: rgba(255,255,255,.2);
+    font-size: 1.5em;
+}
+
+.btn-header:hover{
+    background-color:rgba(255,255,255, .4);
+}
+
+.btn-play{
+    
+    margin: 0 auto;
+    font-size: 3em;
+    border-radius: 50%;
+    padding: 0;
+    width: 90px;
+    height: 90px;
+}
+
+.tour-row{
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child{
+    border-bottom: none;
+}
+
+.tour-item{
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date{
+    font-weight: bold;
+    width: 15%;
+}
+
+.tour-city{
+    width: 37%;
+}
+
+.tour-arena{
+    width: 42%
+}
+
+.tour-btn{
+    max-width: 19%;
+}
+
+.btn-primary{
+    color: white;
+    background-color: #411599fc;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background-color: #1332e2fc;
+}
+
+.purchase-container{
+    display: grid;
+    align-items: center;
+    margin: 1em auto;
+    padding: 0 3em 1rem;
+}
+
+.purchase-container button{
+    margin-top: 20px;
+    padding: 11px;
+    background-color: #1a0a74fc;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.purchase-container button:hover{
+    background-color: #3d22d9fc;
+}
+.purchase-container img{
+    width: 350px;
+    height: 350px;
+}
+
+.purchase-container:last-child{
+    text-align: center;
+    position: relative;
+}
+
+.store-background{
+    background-color: #000000e9;
+}
+.section-image{
+    background-image: url(images/Denzel%20Curry_Blaster.webp);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+@keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left:2400px;}
+    50% {left:2400px;}
+    60% {left:1200px;}
+    70% {left:1200px;}
+    80% {left:0px;}
+    90% {left:0px;}
+    100% {left:0px;}
+}
+
+.slider-frame{
+    overflow: hidden;
+    float:inline-start;
+    height:max-content;
+    width: fit-content;
+    margin-left: 0;
+    margin-right: 0;
+}
+.slide-images{
+    width: min-content;
+    height: auto;
+    margin: 0 0 0 -100px;
+    position: relative;
+    animation: slide_animation;
+    animation-duration: 33s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.img-container{
+    height: auto;
+    width: fit-content;
+    position: relative;
+    float: left;
+}
+
+.shop-item{
+    margin:12px;
+    max-width:410px;
+}
+
+.shop-item-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.1em;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.shop-item-image{
+    height: 300px;
+    width: auto;
+}
+
+.shop-item-details {
+    display:flex;
+    align-items:center;
+    padding:5px;
+}
+
+.shop-item-price{
+    flex-grow:1;
+}
+
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shop-page-selector{
+    text-align: center;
+    margin: 2em;
+}
+
+.cart-header{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: darkslategray;
+}
+
+.cart-column{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row{
+    display: flex;
+}
+
+.cart-item{
+    width: 45%;
+}
+.cart-size{
+    width: 10%;
+    color: #0a0401fc;
+}
+.cart-price{
+    width: 10%;
+    font-size: 1.2em;
+    color: #0a0401fc;
+}
+
+.cart-quantity{
+    width: 35%;
+}
+
+.cart-item-title{
+    color: #0a0401fc;
+    margin-left: .5em;
+    font-size: 1.1em;
+}
+
+.cart-item-image{
+    width: 75px;
+    border-radius: 10px;
+}
+
+.btn-danger{
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover{
+    background-color: rgb(91, 0, 0);
+}
+
+.cart-quantity-input{
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #1a0a74fc;
+    background-color: rgba(216, 223, 222, 0.922);
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child{
+    border-bottom: 2px solid black;
+}
+
+.cart-row:last-child .cart-column{
+    border: none;
+}
+
+.cart-total{
+    text-align: end;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.cart-total-title{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price{
+    color: #333;
+    font-size: 1.1em;
+    margin-right: 30px;
+}
+
+.btn-total{
+    font-size: 1.3em;
+}
